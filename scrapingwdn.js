@@ -7,7 +7,7 @@ console.log(`Hora actual = ${date}`); // imprimir fecha en segundos actual
 
 (async() => {
     const browser = await puppeteer.launch( {headless: false}); //ver lo que esta pasando en el navegador
-    const page = await browser.newPage();
+    const page = await browser.newPage(); //crear pestaña en navegador
 
     await page.goto('https://wts.woden.com.co/wdrp');
     await page.screenshot({ path: '/src/img1.jpg' }) //para capturar pantalla
